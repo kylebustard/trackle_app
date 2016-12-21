@@ -1,24 +1,21 @@
-# README
+# Kyle Bustard personal portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is (one of?) my personal portfolio pages. I already have an existing static portfolio page hosted by github. The idea for this new one came because I wanted a database to list all of the recruiters and companies I am interviewing with.
 
-Things you may want to cover:
+## Key Requirement: 
+- Need public documentation that companies/recruiters did or did not get receive my application, as well as the progress of any talks.
 
-* Ruby version
+## Models:
+- Post -> date:date rationale:text
+- User -> Devise
+- AdminUser -> STI
 
-* System dependencies
+## Features:
+- Approval Workflow
+- SMS Sending -> link to approval or appointment time input
+- Administrate admin dashboard
+- Email summary to recruiters
+- Google Calendar or appointment feature
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## UI: 
+- Boostrap -> formatting
