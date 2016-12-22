@@ -9,6 +9,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Post -> date:date rationale:text
 - User -> Devise
 - AdminUser -> STI
+- Jobs -> position location date:date
 
 ## Features:
 - Approval Workflow
@@ -16,6 +17,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Administrate admin dashboard
 - Email summary to recruiters
 - Google Calendar or appointment feature
+- Search job by date, position, company
 
 ## UI: 
 - Boostrap -> formatting
