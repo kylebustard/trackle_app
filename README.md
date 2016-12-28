@@ -20,4 +20,10 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Search job by date, position, company
 
 ## UI: 
-- Boostrap -> formatting
+- x Boostrap -> formatting
+- Icons from Font Awesome
+- Update the Styles for the forms
+
+## Refactor ToDos:
+- User Association integration test in post_spec
+- error message in _form should be moved to a Helper
