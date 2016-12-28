@@ -15,6 +15,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Approval Workflow
 - SMS Sending -> link to approval or appointment time input
 - Administrate admin dashboard
+- Block non-admin and guest users
 - Email summary to recruiters
 - Google Calendar or appointment feature
 - Search job by date, position, company
