@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 		authorize @post
 		
 		if @post.update(post_params)
-		   redirect_to @post, notice: 'Your post was created successfully'
+			redirect_to @post, notice: 'Your post was edited successfully'
 		else
 			render :edit
 		end
@@ -38,8 +38,8 @@ class PostsController < ApplicationController
 	end
 
 	def destroy
-		@post.delete
-		redirect_to posts_path, notice: 'Your post was deleted successfully'
+    @post.delete
+    redirect_to posts_path, notice: 'Your post was deleted successfully'
 	end
 
 	private
