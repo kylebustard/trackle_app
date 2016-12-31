@@ -28,3 +28,4 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 ## Refactor ToDos:
 - User Association integration test in post_spec
 - error message in _form should be moved to a Helper
+- post/_form for AdminUser with status
