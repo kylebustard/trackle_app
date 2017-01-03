@@ -29,3 +29,4 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - User Association integration test in post_spec
 - error message in _form should be moved to a Helper
 - post/_form for AdminUser with status
+- Figure out why spec/models/user_spec.rb test is passing, despite views/devise/registration/new.html.erb not having input for user first_name last_name
