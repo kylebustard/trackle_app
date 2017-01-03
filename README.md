@@ -18,7 +18,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Block non-admin and guest users
 - Email summary to recruiters
 - Google Calendar or appointment feature
-- Search job by date, position, company
+- Search/sort Job by date, position, company
 
 ## UI: 
 - x Boostrap -> formatting
