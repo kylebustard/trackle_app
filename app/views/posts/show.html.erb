@@ -14,10 +14,10 @@
 	<div>
 		<h3><span>Date:</span> <%= @post.date %></h3>
 	</div>
-
 	<div>
 		<h3><span>Current Stage of Approval:</span> <%= @post.status %></h3>
 	</div>
 </div>
+
 
 <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-primary' if policy(@post).update? %>
