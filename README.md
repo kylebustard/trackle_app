@@ -5,12 +5,8 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 ## Key Requirement: 
 - Need public documentation that companies/recruiters did or did not get receive my application, as well as the progress of any talks.
 
-## Models:
-- Post -> date:date rationale:text
-- User -> Devise
-- AdminUser -> STI
-- AuditLog
-- Jobs -> position location date:date
+## Models: - Post -> date:date rationale:text - User -> Devise - AdminUser ->
+STI - AuditLog - Jobs -> position location date:date
 
 ## Features:
 - Approval Workflow
