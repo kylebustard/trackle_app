@@ -9,7 +9,8 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - x Post -> date:date rationale:text 
 - x User -> Devise 
 - x AdminUser -> STI 
-- AuditLog - Jobs -> position location date:date
+- AuditLog 
+- Jobs -> position location date:date
 
 ## Features:
 - Approval Workflow
