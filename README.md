@@ -3,7 +3,7 @@
 This is (one of?) my personal portfolio pages. I already have an existing static portfolio page hosted by github. The idea for this new one came because I wanted a database to list all of the recruiters and companies I am interviewing with. I started hacking code I'd previously wrote to build an enterprise-level HCRM app for tracking employee hours and overtime. But now I want to build this app that will track all the jobs I apply to.
 
 ## Key Requirement: 
-- Need public documentation that companies/recruiters did or did not get receive my application, as well as the progress of any talks. Job searchers should be able to set their applications for public view or private; recruiters should be able to see if a job searcher's profile is set to public or private.
+- Need public documentation that companies/recruiters did or did not get receive my application, as well as the progress of any talks. Job searchers should be able to set their applications for public view or private; recruiters should be able to see if a job searcher's profile is set to public or private. Additionally, duplicate user accounts should non be valid.
 
 ## Models: 
 - x Post -> date:date rationale:text 
