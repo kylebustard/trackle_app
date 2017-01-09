@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20170109044825) do
 
   create_table "audit_logs", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "status"
+    t.integer  "status",     default: 0
     t.date     "start_date"
     t.date     "end_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.index ["user_id"], name: "index_audit_logs_on_user_id", using: :btree
   end
 
