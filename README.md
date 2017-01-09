@@ -28,7 +28,3 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 
 ## ToDos:
 - Figure out why spec/models/user_spec.rb test is passing, despite views/devise/registration/new.html.erb not saving input for user first_name last_name
-- Integrate validation for phone attr in User:
-  # No spaces or dashes
-  # All characters must be a number
-  # Exactly 10 characters
