@@ -14,7 +14,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 
 ## Features:
 - Approval Workflow
-- SMS Sending -> link to approval or appointment time input
+- SMS Sending -> link to approval or overtime input -> integrate with Heroku scheduler
 - x Administrate admin dashboard
 - x Block non-admin and guest users
 - Email summary to recruiters
