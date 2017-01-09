@@ -20,6 +20,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - Email summary to recruiters
 - Google Calendar or appointment feature
 - Search/sort Job by date, position, company
+- Implement HTML scraper and web crawler to search the web for jobs
 
 ## UI: 
 - x Boostrap -> formatting
