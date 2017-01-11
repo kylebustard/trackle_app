@@ -30,3 +30,4 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 ## ToDos:
 - Figure out why spec/models/user_spec.rb test is passing, despite views/devise/registration/new.html.erb not saving input for user first_name last_name
 - Figure out why spec/models/audit_log_spec.rb user association test is passing, even without the validation being written in the code
+- integrate email inbox web scraping with context.io and 
