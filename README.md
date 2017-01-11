@@ -36,7 +36,7 @@ This is (one of?) my personal portfolio pages. I already have an existing static
 - User can 
 
 ## [User Story] Senior-level job searchers:
-- User can create private profile with selectable degrees of privacy:
+1. User can create private profile with selectable degrees of privacy
 ⋅⋅* Searchable only by recruiters excluding any companies/agencies they filter out.
 
 ## [User Story] Recruiters:
