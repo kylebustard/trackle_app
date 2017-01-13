@@ -18,7 +18,7 @@ puts "1 Admin User created"
 
 100.times do |post|
 	Post.create!(date: Date.current,
-	             rationale: "#{post} rationale content",
+	             rationale: "#{post} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, ducimus, animi. Earum error placeat quos quia saepe ipsum necessitatibus, enim maiores porro soluta dolor aspernatur, omnis magni tempore dolorem alias.",
 	             user_id: @user.id,
 	             overtime_request: 2.5)
 end
