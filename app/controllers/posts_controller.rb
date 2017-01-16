@@ -8,7 +8,8 @@ class PostsController < ApplicationController
 	def approve
 		authorize @post
     @post.approved!
-    redirect_to root_path, notice: 'The post has been approved.'
+    redirect_to root_path,
+    notice: 'The post has been approved.'
 	end
 
 	def new
@@ -20,7 +21,8 @@ class PostsController < ApplicationController
 		@post.user_id = current_user.id
 
 		if @post.save
-			redirect_to @post, notice: 'Your post was created successfully'
+			redirect_to @post,
+			notice: 'Your post was created successfully'
 		else
 			render :new
 		end
@@ -34,7 +36,8 @@ class PostsController < ApplicationController
 		authorize @post
 		
 		if @post.update(post_params)
-			redirect_to @post, notice: 'Your post was edited successfully'
+			redirect_to @post,
+			notice: 'Your post was edited successfully'
 		else
 			render :edit
 		end
@@ -45,7 +48,8 @@ class PostsController < ApplicationController
 
 	def destroy
     @post.delete
-    redirect_to posts_path, notice: 'Your post was deleted successfully'
+    redirect_to posts_path,
+    notice: 'Your post was deleted successfully'
 	end
 
 	private
