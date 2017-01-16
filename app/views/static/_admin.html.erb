@@ -6,9 +6,15 @@
   locals: { pending_approvals: @pending_approvals } %>
 	</div>
 
-	<div class="pending-homepage">
-		<div>
-			<p>bbkbkbk</p>
-		</div>
+	<div class="pending-homepage row">
+	  <h2>Confirmation Log</h2>
+	  <hr>
+  <%= render partial: 'confirmation_log',
+  locals: { recent_audit_items: @recent_audit_items } %>
+
+  <div class="clearfix"></div>
+  <hr>
+
+  <%= link_to 'view all items'.titleize, audit_logs_path, class: 'btn btn-primary' %>
 	</div>
 </div>
