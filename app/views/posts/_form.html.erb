@@ -7,22 +7,30 @@
   <% end %>
 
   <div class="form-group">
-  <%= f.label :overtime_request, class: 'col-sm-2 control-label' %>
-  <%= f.text_field :overtime_request, class: 'form-control' %>
+  <%= f.label :overtime_request,
+  class: 'col-sm-2 control-label' %>
+  <%= f.text_field :overtime_request,
+  class: 'form-control' %>
   </div>
 
   <div class="form-group">
-  <%= f.label :date, class: 'col-sm-2 control-label' %>
-  <%= f.date_field :date, class: 'form-control' %>
+  <%= f.label :date,
+  class: 'col-sm-2 control-label' %>
+  <%= f.date_field :date,
+  class: 'form-control' %>
   </div>
 
   <div class="form-group">
-  <%= f.label :rationale, class: 'col-sm-2 control-label' %>
-  <%= f.text_area :rationale, class: 'form-control' %>
+  <%= f.label :rationale,
+  class: 'col-sm-2 control-label' %>
+  <%= f.text_area :rationale,
+  class: 'form-control' %>
   </div>
 
-  <%= render partial: 'status', locals: { f: f } if current_user.type == 'AdminUser' %>  
+  <%= render partial: 'status',
+  locals: { f: f } if current_user.type == 'AdminUser' %>  
 
-  <%= f.submit 'Save', class: 'btn btn-primary btn-block' %>
+  <%= f.submit 'Save',
+  class: 'btn btn-primary btn-block' %>
 
 <% end %>
