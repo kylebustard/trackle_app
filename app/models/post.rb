@@ -13,4 +13,5 @@ class Post < ApplicationRecord
 	  	audit_log = AuditLog.where(user_id: self.user_id, start_date: (self.date - 7.days..self.date)).last
 	  	audit_log.confirmed! if audit_log
 	  end
+	  #this is a nil guard for the callback
 end
