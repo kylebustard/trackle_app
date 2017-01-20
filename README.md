@@ -14,12 +14,13 @@ This is an enterprise-level HRM app for tracking employee hours and overtime.
 - x AuditLog 
 
 ## Features:
-- Approval Workflow
+- x Approval Workflow
 - SMS Sending -> link to approval or overtime input -> integrate with Heroku scheduler
 - x Administrate admin dashboard
 - x Block non-admin and guest users
 - Email summary to recruiters
-- Needs to be documented if employee did not log overtime
+- x Needs to be documented if employee did not log overtime
+- Need to update end_date when confirmed
 
 ## UI: 
 - x Boostrap -> formatting
