@@ -3,14 +3,11 @@ namespace :notification do
   task sms: :environment do
     if Time.now.sunday?
       employees = Employee.all
-      notification_message = "Please log into the overtime management dashboard to request overtime or confirm your hours for last week: https://trackleapp.herokuapp.com/"
+      notification_message = "Please log into the overtime management dashboard to request overtime or confirm your hours for last week: https://wlp-overtime.herokuapp.com"
 
       employees.each do |employee|
         AuditLog.create!(user_id: employee.id)
-        SmsTool.send_sms(
-          number: employee.phone,
-          message: notification_message
-          )
+        SmsTool.send_sms(number: employee.phone, message: notification_message)
       end
     end
   end
