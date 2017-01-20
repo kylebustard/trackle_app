@@ -2,21 +2,20 @@
 
 <div class='logo'>
 	<h1>TrackleApp</h1>
+	<h4><i>Enterprise-level overtime tracking</i></h4>
 </div>
 
-<!-- TODO -->
 <% if current_user %>
 <ul class="custom-nav nav nav-tabs">
 	<li class="<%= active?(root_path) %>">
-		<%= link_to "Home",
-		root_path %>
+		<%= link_to "",
+		root_path, class: 'glyphicon glyphicon-home' %>
 	</li>
 	<li class="<%= active?(posts_path) %>">
-		<%= link_to "Time Entries",
+		<%= link_to "Entries",
 		posts_path %>
 	</li>
 
-  <!-- TODO possibly refactor -->
 	<%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
 
 	<li class="<%= active?(new_post_path) %>">
@@ -50,4 +49,3 @@
 	</li>
 </ul>
 <% end %>
-<!-- TODO -->

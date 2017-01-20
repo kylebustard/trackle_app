@@ -21,6 +21,14 @@ This is an enterprise-level HRM app for tracking employee hours and overtime.
 - Email summary to recruiters
 - x Needs to be documented if employee did not log overtime
 - Need to update end_date when confirmed
+- Update AuditLog status when an overtime is rejected
+- Update buttons on employee homepage for mobile
+- Update buttons to include time span
+- Update button sort order on employee homepage
+- Remove unnecessary nav bar buttons for managers
+- Fix admin dash bug
+- Implement Honeybadger for bug reporting
+- Implement new relic for keeping site alive
 
 ## UI: 
 - x Boostrap -> formatting
