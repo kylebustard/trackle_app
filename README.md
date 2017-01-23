@@ -27,8 +27,8 @@ This is an enterprise-level HRM app for tracking employee hours and overtime.
 - x Update button sort order on employee homepage
 - x Remove unnecessary nav bar buttons for managers
 - x Fix admin dash bug
-- Implement Honeybadger for bug reporting
-- Implement new relic for keeping site alive
+- Implement Honeybadger.io for bug reporting
+- x Implement new relic for keeping site alive
 - Check on data issue and verify correct hours
 
 ## UI: 
