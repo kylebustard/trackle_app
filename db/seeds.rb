@@ -35,7 +35,7 @@ puts "3 Audit Logs have been created"
     Post.create!(date: Date.current,
         rationale: "#{post} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, ducimus, animi. Earum error placeat quos quia saepe ipsum necessitatibus, enim maiores porro soluta dolor aspernatur, omnis magni tempore dolorem alias.",
         user_id: @employee.id,
-        overtime_request: 2.5)
+        daily_hours: 12.5)
 end
 
 puts "100 Posts have been created"
