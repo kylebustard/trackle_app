@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
 
 	belongs_to :user
 	validates_presence_of :date,
-	:rationale,
+	:work_performed,
 	:daily_hours
 
 	validates :daily_hours,
