@@ -1,21 +1,21 @@
-@employee = Employee.create(email: "test@test.com",
-    password: "asdfasdf",
-    password_confirmation: "asdfasdf",
-    first_name: "Jon",last_name: "Snow",
+@employee = Employee.create(email: "employee_x@trackleapp.com",
+    password: "opensesame",
+    password_confirmation: "opensesame",
+    first_name: "Lloyd",last_name: "Christmas",
     phone: '9802673103',
     ssn: 1234,
-    company: 'Acme Company')
+    company: 'Mutt Cutts, LLC')
 
-puts "1 employee created"
+puts "1 Employee created"
 
-AdminUser.create(email: "kabustard@yahoo.com",
-    password: "asdfasdf",
-    password_confirmation: "asdfasdf",
-    first_name: "Admin",
-    last_name: "Name",
+AdminUser.create(email: "admin_x@trackleapp.com",
+    password: "opensesame",
+    password_confirmation: "opensesame",
+    first_name: "Harry",
+    last_name: "Dunne",
     phone: '9802673103',
     ssn: 1234,
-    company: 'Acme Company')
+    company: 'Mutt Cutts, LLC')
 
 puts "1 Admin User created"
 
@@ -33,7 +33,13 @@ puts "3 Audit Logs have been created"
 
 100.times do |post|
     Post.create!(date: Date.current,
-        work_performed: "#{post} Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, ducimus, animi. Earum error placeat quos quia saepe ipsum necessitatibus, enim maiores porro soluta dolor aspernatur, omnis magni tempore dolorem alias.",
+        work_performed: "#{post} | Dogs were walked, cut and shampooed.
+        In addition to basic grooming, nails were cut and trimmed.
+        Fur was conditioned with salon product.
+        Pooches were allowed to nap whilst the music of Yanni played,
+        and incense burned to provide a therapeutic aroma therapy.
+        A mild perfume was sprayed to extend the luxurious smells of perennial vanilla and lavender to the owners.
+        Finally, the canine patrons were sent home with a classy kerchief tied stylishly around their necks.",
         user_id: @employee.id,
         daily_hours: 12.5)
 end
