@@ -1,17 +1,44 @@
 <h2>Log in</h2>
 
+<div class="col-md-12">
+  <a id="modal-525392" href="#modal-container-525392" role="button" class="btn" data-toggle="modal">Take the demo tour!</a>
+      <div class="modal fade" id="modal-container-525392" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">
+                DEMO MODE
+              </h4>
+            </div><!-- close modal header -->
+            <div class="modal-body">
+<%= render 'alert_demo_login' %>
+            </div>
+          </div><!-- close modal content -->
+        </div><!-- close modal dialog -->
+      </div><!-- close modal -->
+      
+    </div>
+
 <div class="row">
   <div class="col-md-4">
     <%= form_for(resource, as: resource_name, 
     url: session_path(resource_name), class: 'form-horizontal') do |f| %>
       <div class="form-group">
         <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+        <%= f.email_field :email,
+        autofocus: true,
+        class: 'form-control',
+          id: 'result',
+          placeholder: 'Select Admin or Employee above' %>
       </div>
 
       <div class="form-group">
         <%= f.label :password, class: 'control-label' %><br />
-        <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+        <%= f.password_field :password,
+        autocomplete: "off",
+        class: 'form-control',
+          id: 'result2',
+          placeholder: 'opensesame' %>
       </div>
 
       <% if devise_mapping.rememberable? -%>
@@ -27,6 +54,7 @@
     <% end %>
 
     <%= render "devise/shared/links" %>
-  </div>
-</div>
+  </div><!-- close col-md-4 -->
+</div><!-- close row -->
+
 

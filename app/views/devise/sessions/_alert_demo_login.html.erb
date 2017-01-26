@@ -1,0 +1,30 @@
+<div class="alert alert-dismissable alert-info">
+         
+      <h4>Welcome to TrackleApp</h4>
+        <div class="well well-sm"><i>Take a look around. As a guest in our demo mode, you can sign in as an Admin or an Employee&mdash;TrackleApp is designed to be a closed, enterprise application, so new users will only be created by existing admins. Have fun! <a href="https://github.com/kylebustard/trackle_app" class="alert-link" target="_blank">(source code)</i></a>
+        </div>
+
+
+<div class="container">
+  <div class="row">
+    <div>
+      Select a user:
+    </div>
+
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default" value="admin_x@trackleapp.com" name="no" onclick="moveString(this.value)" data-dismiss="modal">Admin</button>  
+      <button type="button" class="btn btn-default" value="employee_x@trackleapp.com" name="no" onclick="moveString(this.value)" data-dismiss="modal">Employee</button>
+    </div>
+  </div><!-- close row -->
+</div><!-- close container -->
+
+<script>
+function moveString(string){
+    document.getElementById("result").value=string;
+    document.getElementById("result2").value="opensesame";
+}
+</script>
+
+</div><!-- close alert  -->
+
+
