@@ -18,7 +18,7 @@ class EmployeeDashboard < Administrate::BaseDashboard
     type: Field::String.with_options(searchable: false),
     phone: Field::String.with_options(searchable: false),
     ssn: Field::Number.with_options(searchable: true),
-    company: Field::String.with_options(searchable: false),
+    company: Field::String.with_options(searchable: false)
   }.freeze
 
   COLLECTION_ATTRIBUTES = [
@@ -33,6 +33,7 @@ class EmployeeDashboard < Administrate::BaseDashboard
     :company,
     :email,
     :phone,
+    :type,
     :sign_in_count,
     :current_sign_in_at,
     :last_sign_in_at,
@@ -41,8 +42,7 @@ class EmployeeDashboard < Administrate::BaseDashboard
     :first_name,
     :last_name,
     :created_at,
-    :updated_at,
-    :type,
+    :updated_at
   ].freeze
 
   FORM_ATTRIBUTES = [
